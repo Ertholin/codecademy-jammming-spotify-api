@@ -1,0 +1,11 @@
+.header {
+    text-align: center;
+    font-family: Tahoma, sans-serif;
+    background-color: rgb(39, 13, 65);
+    color: #ffff;
+    padding: 5px 0;
+}
+
+.m_color {
+    color: rgb(102, 37, 167);
+}
