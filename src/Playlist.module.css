@@ -1,0 +1,20 @@
+.playlist {
+    width: 30%;
+    background-color: rgb(39, 13, 65);
+    opacity: 0.5;
+    margin: 15px;
+}
+
+.button_save {
+    /* font-size: 18px; */
+    border-radius: 10px;
+    padding: 8px;
+    width: 30%;
+    text-transform: uppercase;
+    background-color: rgb(102, 37, 167);
+    color: #fff;
+}
+
+.button_save:hover {
+    background-color: rgb(39, 13, 65);
+}
