@@ -1,7 +1,37 @@
 .tracklist {
     width: 60%;
     background-color:bisque;
-    margin: 15px;
+    font-size: 14px;
+    margin: 5%;
     background-color: rgb(39, 13, 65);
     opacity: 0.5;
+    padding: 2%;
+    overflow-x: auto; /* Enables horizontal scrolling if necessary */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+th, td {
+    border-bottom: 2px solid #fff;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.button_add {
+    background-color: transparent;
+    border: none; 
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+} 
+
+.button_add:hover {
+    color: #535353;
+    border: 2px solid #fff; 
+    border-radius: 50%;
+    font-size: 16px;
 }

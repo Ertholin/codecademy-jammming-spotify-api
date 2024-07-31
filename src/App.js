@@ -9,8 +9,10 @@ function App() {
     <div className="App-header">
       <Header />
       <SearchBar />
-      <Tracklist />
-      <Playlist />
+      <div className="container">
+        <Tracklist />
+        <Playlist />
+      </div>
     </div>
   );
 }

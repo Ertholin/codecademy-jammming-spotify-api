@@ -5,9 +5,31 @@ const Tracklist = () => {
     return (
         <div className={styles.tracklist}>
             <h1>Results</h1>
-            <hr />
-            <h4>Song's title Song's title</h4>
-            <p>Song's description</p>
+
+            <table>
+                <tr>
+                    <td>
+                        <h3>Note that the development build is not optimized.</h3>
+                        <p>Description of the music</p>
+                    </td>
+                    <td>
+                    <button type="button" className={styles.button_add}>+</button>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <h3>Note that the development build is not optimized.</h3>
+                        <p>Description of the music</p>
+                    </td>
+                    <td>
+                    <button type="button" className={styles.button_add}>+</button>
+                    </td>
+                </tr>
+                
+
+            </table>
         </div>
     )
 }
