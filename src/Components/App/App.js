@@ -1,25 +1,38 @@
-import './App.css';
-import Header from './Header';
-import SearchBar from './SearchBar';
-import Playlist from './Playlist';
-import Tracklist from './Tracklist';
-
+import React, { useState } from 'react';
+import styles from './App.module.css';
+import SearchResults from '../SearchResults/SearchResults';
 function App() {
+  const [searchResults, setSearchResults] = useState([
+    {
+      name: "example of track name 1",
+      artist: "example of track artist 1",
+      album: "example of track album 1",
+      id: 1,
+    },
+    {
+      name: "example of track name 2",
+      artist: "example of artist name 2",
+      album: "example of track album 2",
+      id: 2,
+    }
+    
+  ]);
   return (
     <div>
-    <h1>
-      Ja<span className="highlight">mmm</span>ing
-    </h1>
-    <div className="App">
-      {/* <!-- Add a SearchBar component --> */}
-      
-      <div className="App-playlist">
-        {/* <!-- Add a SearchResults component --> */}
-        {/* <!-- Add a Playlist component --> */}
+      <h1>
+        Ja<span className={styles.highlight}>mmm</span>ing
+      </h1>
+      <div className={styles.App}>
+        {/* <!-- Add a SearchBar component --> */}
+
+        <div className={styles['App-playlist']}>
+          {/* <!-- Add a SearchResults component --> */}
+          <SearchResults userSearchResults={searchResults} />
+          {/* <!-- Add a Playlist component --> */}
+        </div>
       </div>
     </div>
-  </div>
-    );
+  );
 }
 
 export default App;
