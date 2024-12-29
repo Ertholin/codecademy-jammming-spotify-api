@@ -1,4 +1,8 @@
-.tracklist {
+.Tracklist {
+    width: 100%;
+}
+
+/* .tracklist {
     width: 60%;
     background-color:bisque;
     font-size: 14px;
@@ -6,7 +10,7 @@
     background-color: rgb(39, 13, 65);
     opacity: 0.5;
     padding: 2%;
-    overflow-x: auto; /* Enables horizontal scrolling if necessary */
+    overflow-x: auto; 
 }
 
 table {
@@ -34,4 +38,4 @@ th, td {
     border: 2px solid #fff; 
     border-radius: 50%;
     font-size: 16px;
-}
+} */
