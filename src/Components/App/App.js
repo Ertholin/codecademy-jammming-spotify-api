@@ -1,21 +1,31 @@
 import React, { useState } from 'react';
 import styles from './App.module.css';
 import SearchResults from '../SearchResults/SearchResults';
+import Playlist from '../Playlist/Playlist';
 function App() {
   const [searchResults, setSearchResults] = useState([
+  ]);
+
+  const [playlistName, setPlaylistName] = useState("Example Playlist Name");
+  const [playlistTracks, setPlaylistTrack] = useState([
     {
-      name: "example of track name 1",
-      artist: "example of track artist 1",
-      album: "example of track album 1",
+      name: "Example Playlist Name 1",
+      artist: "Example Playlist Artist 1",
+      album: "Example Playlist Album 1",
       id: 1,
     },
     {
-      name: "example of track name 2",
-      artist: "example of artist name 2",
-      album: "example of track album 2",
+      name: "Example Playlist Name 2",
+      artist: "Example Playlist Artist 2",
+      album: "Example Playlist Album 2",
       id: 2,
-    }
-    
+    },
+    {
+      name: "Example Playlist Name 3",
+      artist: "Example Playlist Artist 3",
+      album: "Example Playlist Album 3",
+      id: 3,
+    },
   ]);
   return (
     <div>
@@ -28,7 +38,9 @@ function App() {
         <div className={styles['App-playlist']}>
           {/* <!-- Add a SearchResults component --> */}
           <SearchResults userSearchResults={searchResults} />
+
           {/* <!-- Add a Playlist component --> */}
+          <Playlist playlistName={playlistName} playlistTracks={playlistTracks} />
         </div>
       </div>
     </div>
