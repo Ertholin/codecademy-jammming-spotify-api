@@ -1,9 +1,8 @@
-// require('dotenv').config();
-// const clientID = process.env.CLIENT_ID;
 
 let accessToken;
 const clientID = process.env.REACT_APP_CLIENT_ID;
-const redirectUrl = "http://localhost:3000";
+// const redirectUrl = "http://localhost:3000";
+const redirectUrl = "https://erthojamming.surge.sh";
 
 const Spotify = {
     getAccessToken() {
